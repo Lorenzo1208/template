@@ -1,0 +1,16 @@
+
+name: Test Workflow
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Ajoutez ici les étapes nécessaires pour tester votre projet

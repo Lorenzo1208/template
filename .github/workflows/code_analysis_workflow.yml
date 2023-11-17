@@ -1,0 +1,16 @@
+
+name: Static Code Analysis
+
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  analysis:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Ajoutez les étapes pour analyser votre code
